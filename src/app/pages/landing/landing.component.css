@@ -1,0 +1,73 @@
+.content-landing-block-001{
+    width: 100%;
+    margin-top: 525px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-landing-block-002{
+    width: 100%;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-landing-001,.content-landing-002{
+    width: 90%;
+    display: contents;
+}
+
+.title-landing-01{
+    font-size: 30px;    
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color:#fca311;
+}
+
+.subtitle-landing-001{
+    font-size: 17px;    
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color:black;   
+}
+
+.title-landing-02{
+    position: absolute;
+    font-size: 30px;    
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color:#fca311; 
+    margin-bottom: 20px;
+}
+
+.space-div-right{
+    width: 45%;
+}
+
+.space-div-left{
+    width: 45%;
+}
+
+.img-why{
+    width: 100%;
+}
+
+.content-card-course{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    width: 90%;
+}
+
+.card{
+    background-color: white;
+    box-shadow: 10px 10px 10px 7px #00000038;
+    width: 30%;
+}

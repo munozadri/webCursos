@@ -1,0 +1,90 @@
+.icon{
+    position: absolute;
+    width: 30px;
+    height: 28px;
+    margin-top: 11px;
+    margin-left: 7px;
+}
+
+.title-name{
+    font-size: 14px;
+    margin-left: 48px;
+    position: absolute;
+    margin-top: 17px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+ 
+}
+
+.content{
+    background-color: #fca311;
+    width: 100%;
+    height: 50px;
+}
+
+.img-header{
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0 solid;   
+    width: 100%;
+    height: 460px;
+    position: absolute;
+    filter: brightness(0.5);
+    margin-top: 48px;
+    box-shadow: 10px 10px 10px 7px #00000038;
+}
+
+.img-nav{
+    position: relative;
+}
+
+ul{
+    position: absolute;
+    display: flex;
+    margin-top: 62px;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    margin-right: 47px;
+}
+
+li{
+    margin-right: 15px;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+li:hover{
+    color: #fca311;
+}
+
+.aling-nav{
+    justify-content: flex-end;
+    display: flex;
+}
+
+.content-lema{
+    position: absolute;
+    margin-top: 229px;
+    margin-left: 140px;
+}
+
+.title-lema{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+}
+
+.subtitle-lema{
+    margin-top: -14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: white;
+    font-style: italic;
+}

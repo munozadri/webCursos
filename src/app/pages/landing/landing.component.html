@@ -1,28 +1,58 @@
-<div class="content-landing-block-001">  
-    <div class="content-landing-001">
-        <div class="space-div-right">
-            <img class="img-why" src="../../../assets/img/landing_001.jpg" alt="img-why">
+<ion-row>   
+    <div class="content-landing-block-001">  
+        <div class="content-landing-001">
+            <ion-col size-xs="12" size-md="12" size-lg="6" size-xl="6">
+                <div class="space-div-right">
+                    <img class="img-why" src="../../../assets/img/landing_001.jpg" alt="img-why">        
+                </div>
+            </ion-col>
 
+            <ion-col size-xs="12" size-md="12" size-lg="6" size-xl="6">
+                <div class="space-div-left">
+                    <h1 class="title-landing-01">¿Por qué elegir nuestros cursos?</h1>
+                    <p class="subtitle-landing-001">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. </p>
+                </div>  
+            </ion-col>               
+        </div>   
+    </div>
+</ion-row>
+
+<ion-row>    
+    <div class="content-landing-block-002">
+        <div class="content-landing-002">   
+            <h1 class="title-landing-02">Catalogo de Cursos</h1>         
         </div>
-        <div class="space-div-left">
-            <h1 class="title-landing-01">¿Por qué elegir nuestros cursos?</h1>
-            <p class="subtitle-landing-001">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. </p>
-        </div>     
-    </div>   
-</div>
-
-<div class="content-landing-block-002">
-    <div class="content-landing-002">   
-        <h1 class="title-landing-02">Nuestros Cursos</h1>         
+    
+        <div class="content-card-course">
+            <ng-container *ngFor="let course of courses">
+                <ion-col size-xs="12" size-md="12" size-lg="4" size-xl="4">
+                    <div class="card">                       
+                        <img class="img-course" src="{{course.img}}" alt="img-course">                       
+                        <h1 class="title-course-card">{{course.title}}</h1>
+                        <h2 class="subtitle-course-card">{{course.subtitle}}</h2>
+                        <div class="border"></div>
+                       <div class="extraDetails">
+                            <span class="span"><img class="img-span" src="../../../assets/img/trending-topic.png" alt="icon-module">{{course.module}}</span>
+                            <span class="span"><img class="img-span" src="../../../assets/img/24-horas.png" alt="icon-time">{{course.time}}</span>
+                            <span class="span"><img class="img-span" src="../../../assets/img/flujo-de-dinero.png" alt="icon-price">{{course.price}}</span>
+                       </div>
+                        <div (click)="moreDetails(course.id)">                                                     
+                            <ng-container *ngIf="course.more">
+                                <p class="text-course-card">{{course.text_a}}</p>
+                                <p class="text-course-card">{{course.text_b}}</p>
+                                <p class="text-course-card">{{course.text_c}}</p>
+                                <p class="text-course-card">{{course.text_d}}</p>
+                                <p class="text-course-card">{{course.text_e}}</p>
+                                <p class="text-course-card">{{course.text_f}}</p>
+                                <p class="text-course-card">{{course.text_g}}</p>
+                            </ng-container>
+                            <p class="seeMore" *ngIf="!course.more">Ver más...</p>  
+                            <p class="seeMore" *ngIf="course.more">Ver menos...</p>  
+                        </div>
+                      
+                    </div>
+                </ion-col>                
+            </ng-container>
+        </div>
     </div>
-
-    <div class="content-card-course">
-        <ng-container *ngFor="let course of courses">
-            <div class="card">
-                <h1>{{course.title}}</h1>
-                <h2>{{course.subtitle}}</h2>
-                <p>{{course.text}}</p>
-            </div>
-        </ng-container>
-    </div>
-</div>
+</ion-row>

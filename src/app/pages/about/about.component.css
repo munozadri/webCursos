@@ -1,0 +1,73 @@
+.content-about{
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 525px;   
+    justify-content: center;
+    margin-bottom: 15%;
+}
+
+img{
+    width: 450;
+    height: 350px;
+    border-radius: 50%; 
+     object-fit: cover;
+}
+
+.intro-a{
+    font-size: 30px;    
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color:#fca311;  
+   
+}
+
+.intro{
+    font-size: 17px;    
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    color:black;   
+   
+}
+
+.instructor{
+    font-size: 25px;    
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    color:black;  
+}
+
+.descripcion-a{
+    font-size: 19px;    
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+    color:black; 
+}
+
+.space{
+    margin-top: -1%;
+}
+
+.center{
+    text-align: center;
+}
+
+@media screen and (max-width: 992px)  {  
+    .content-about{
+        width: 90%;   
+    }
+}
+
+@media screen and (min-width: 1395px)  {    
+    .content-about{
+        width: 68%;   
+    }
+
+}

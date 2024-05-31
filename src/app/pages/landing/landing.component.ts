@@ -13,7 +13,7 @@ export class LandingComponent implements OnInit {
     this.courses.push(
       {
       id: 1,
-      img:"../../../assets/img/sqlServer.jpg",
+      img:"../../../assets/img/dax.png",
       more: false,
       title: 'DAX (Data Analysis Expressions)',
       time: '14hs',
@@ -48,7 +48,7 @@ export class LandingComponent implements OnInit {
       },    
       {
         id: 3,
-        img:"../../../assets/img/dax.png",
+        img:"../../../assets/img/sqlServer.jpg",
         more: false,
         title: 'SQL Programación Principiante',
         time: '3hs',

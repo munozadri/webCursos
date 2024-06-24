@@ -73,6 +73,10 @@ export class HeaderComponent implements OnInit {
         this.router.navigateByUrl('/nosotros');
       }
       break;
+      case 3:{
+        this.router.navigateByUrl('/cursos');
+      }
+      break;
     }
 
   }

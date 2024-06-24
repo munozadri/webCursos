@@ -43,8 +43,8 @@
 ul{
     position: absolute;
     display: flex;
-    margin-top: 62px;
-    color: white;
+    margin-top: 15px;
+    color: black;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -59,7 +59,7 @@ li{
 }
 
 li:hover{
-    color: #fca311;
+    color: white;
 }
 
 .aling-nav{
@@ -91,12 +91,12 @@ li:hover{
     font-style: italic;
 }
 
-@media screen and (max-width: 992px)  {
+@media screen and (max-width: 992px)  {    
     ul{
         position: absolute;
         display: flex;
         margin-top: 62px;
-        color: white;
+        color: black;
         font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-style: normal;
@@ -109,6 +109,10 @@ li:hover{
         list-style-type: none;
         cursor: pointer;
     } 
+
+    li:hover{
+        color: #fca311;;
+    }
 
     .aling-nav{
         display: block;

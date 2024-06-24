@@ -2,7 +2,7 @@
     <img class="icon" src="../../../assets/img/icon.png" alt="icon-header">
     <h1 class="title-name">Cursos Online Luis Muñoz</h1>
     <div class="img-nav">
-        <img class="img-header" src="../../../assets/img/header_001.jpg" alt="img-header">
+        <img *ngIf="showHeader" class="img-header" src="../../../assets/img/header_001.jpg" alt="img-header">
         <div *ngIf="isDesktop" class="aling-nav">
             <ul>
                 <li (click)="goToMenu(li.id)" *ngFor="let li of navList">{{li.title}}</li>               

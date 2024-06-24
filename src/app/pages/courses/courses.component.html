@@ -1,0 +1,79 @@
+<div class="content-course">
+  <ion-row>
+    <ion-col size="12">
+      <h2 class="title">Nuestros Cursos</h2>
+    </ion-col>
+
+  </ion-row>
+  <ion-row class="row">
+    <ion-col (click)="active(tab.id)" class="tabs" *ngFor="let tab of tabs" size-xs="12" size-md="12" size-lg="3" size-xl="3">
+      <h2 [ngClass]="{ 'active': tab.active }" >{{tab.title}}</h2>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>    
+    <ion-col size-xs="12" size-md="12" size-lg="8" size-xl="8">
+      <h2 class="subtitle">DAX | Data Analysis Expressions</h2>
+      <div [ngSwitch]="activeTab">
+        <div *ngSwitchCase="'1'">          
+          <div *ngIf="selectedVideo">
+            <app-video-player [video]="selectedVideo"></app-video-player>
+          </div>
+        </div>
+      
+        <div *ngSwitchCase="'2'">          
+
+         <ion-row>
+          <ion-col class="mantenimiento">            
+            <img class="img" src="../../../assets/img/mante.png" alt="mantenimiento">
+          </ion-col>
+         </ion-row>
+        </div>
+
+        <div *ngSwitchCase="'3'">
+          <ion-row>
+            <ion-col class="mantenimiento">             
+              <img class="img" src="../../../assets/img/mante.png" alt="mantenimiento">
+            </ion-col>
+           </ion-row>
+        </div>         
+      </div>     
+    </ion-col>
+
+    <ion-col size-xs="12" size-md="12" size-lg="4" size-xl="4">            
+      <div class="schema" [ngSwitch]="activeTab">        
+        <div *ngSwitchCase="'1'">        
+          <div class="accordion-title" (click)="activeAccordion(1)">
+            Sección 1 | Introducción al curso                 
+          </div>
+          <ng-container *ngIf="activeSeccionOne">
+            <div  *ngFor="let video of videos">
+              <h3>{{ video.title }} <button (click)="playVideo(video.id)">Reproducir</button></h3>                                  
+            </div>
+          </ng-container>          
+          <div class="accordion-title" (click)="activeAccordion(2)">
+            Sección 2 | Introducción a DAX.                
+          </div>
+          <div *ngIf="activeSeccionTwo">
+            <h3>Registrate para acceder al curso completo </h3>                               
+          </div>
+          <div class="accordion-title" (click)="activeAccordion(3)">
+            Sección 2 | Fundamentos.            
+          </div>
+          <div *ngIf="activeSeccionThree">
+            <h3>Registrate para acceder al curso completo </h3>                                  
+          </div>                            
+        </div> 
+
+        <div *ngSwitchCase="'2'">
+          <p class="text">En desarrollo de contenido...</p>
+        </div>
+
+        <div *ngSwitchCase="'3'">
+          <p class="text">En desarrollo de contenido...</p>
+        </div>  
+        
+      </div>
+    </ion-col>
+  </ion-row>
+</div>

@@ -90,6 +90,9 @@ export class HeaderComponent implements OnInit {
       case 4:{
         this.router.navigateByUrl('/registro');
       }
+      case 5:{
+        this.router.navigateByUrl('/login');
+      }
       break;
     }
 

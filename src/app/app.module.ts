@@ -5,10 +5,13 @@ import { ComponentsModuleModule } from './components/components-module/component
 import { LandingModule } from './pages/landing/module/landing.module';
 import { AboutModule } from './pages/about/module/about.module';
 import { CoursesModule } from './pages/courses/module/courses.module';
+import { RegistrationComponent } from './pages/registration/registration.component';
+import { RegistrationModule } from './pages/registration/module/module.module';
+import { LoginModule } from './pages/login/module/login.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent,    
   ],
   imports: [
     BrowserModule,
@@ -16,7 +19,10 @@ import { CoursesModule } from './pages/courses/module/courses.module';
     ComponentsModuleModule,
     LandingModule,
     AboutModule,     
-    CoursesModule
+    CoursesModule,
+    RegistrationModule,
+    LoginModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

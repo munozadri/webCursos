@@ -1,0 +1,56 @@
+<div class="content-about">
+  
+  <ion-row>
+    <ion-col class="col" size="12">
+      <h2 style="color: #fca311;font-size: 32px;">Registro de Usuario</h2>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="col" size="12">
+      <img src="../../../assets/img/registro.png" alt="registro">
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="col" size="12">    
+  
+      <form [formGroup]="registroForm" (ngSubmit)="submitForm()">      
+        
+        <div class="form-group">
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" formControlName="nombre" class="form-control">
+        </div>
+      
+        <div class="form-group">
+          <label for="apellido">Apellido:</label><br>
+          <input type="text" id="apellido" formControlName="apellido" class="form-control">
+        </div>
+      
+        <div class="form-group">
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" formControlName="email" class="form-control">
+        </div>
+      
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label><br>
+          <input type="tel" id="telefono" formControlName="telefono" class="form-control">
+        </div>
+      
+        <div class="form-group">
+          <label for="password">Crear Contraseña:</label><br>
+          <input type="password" id="password" formControlName="password" class="form-control">
+        </div>
+      
+        <div class="form-group">
+          <label for="confirmPassword">Confirmar Contraseña:</label><br>
+          <input type="password" id="confirmPassword" formControlName="confirmPassword" class="form-control">          
+        </div>
+      
+        <button type="submit" class="btn btn-primary">Registrarse</button>
+      </form>
+    </ion-col>
+  </ion-row>
+
+  
+</div>
+
+

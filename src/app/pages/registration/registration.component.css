@@ -1,0 +1,37 @@
+.content-about{
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 87px;   
+  justify-content: center;
+  margin-bottom: 20%;
+}
+
+img{
+  width: 250px;
+  height: 250px;
+  text-align: center;
+}
+
+.col{
+  display: flex;
+  justify-content: center;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #fca311;
+    border-color: #fca311;
+  }
+  
+  .btn-primary:hover {
+    background-color: #e88b00;
+    border-color: #e88b00;
+  }
+/* 
+  input{
+   border: 0;
+    
+  } */

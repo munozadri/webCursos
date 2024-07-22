@@ -17,20 +17,12 @@ export class HeaderComponent implements OnInit {
   constructor(
     private router: Router
   ){
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-    ).subscribe((event: any) => {
-      this.currentRoute = event.url;
-      if(this.currentRoute == '/inicio'){
-        this.showHeader = true;
-      }else{
-        this.showHeader = false;
-      }      
-    });
+    this.checkHeader();       
   }
   
 
   ngOnInit(): void {
+    this.checkHeader();   
     this.checkScreenWidth();
     this.navList.push(
       {
@@ -48,12 +40,30 @@ export class HeaderComponent implements OnInit {
       {
         id:4,
         title: 'Registrarse',
+      },
+      {
+        id:5,
+        title: 'Iniciar Sesión',
       }
     )
   }
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
     this.checkScreenWidth();
+  }
+
+  checkHeader(){
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe((event: any) => {
+      this.currentRoute = event.url;
+      console.log(this.currentRoute)
+      if(this.currentRoute == '/inicio' || this.currentRoute == '/'  ){
+        this.showHeader = true;
+      }else{
+        this.showHeader = false;
+      }      
+    });
   }
 
   checkScreenWidth() {
@@ -75,6 +85,10 @@ export class HeaderComponent implements OnInit {
       break;
       case 3:{
         this.router.navigateByUrl('/cursos');
+      }
+      break;
+      case 4:{
+        this.router.navigateByUrl('/registro');
       }
       break;
     }

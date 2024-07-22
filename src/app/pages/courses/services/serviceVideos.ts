@@ -8,18 +8,18 @@ public videos = [
     { 
       id: 1,
       title: 'Introducción al curso',
-      videoUrl: '../../assets/cursoProgramacion/video1.mp4',      
+      videoUrl: '../../assets/cursoProgramacion/Introduccion_funciones.mkv',      
     },
     { 
       id: 2,
       title: 'Introducción a DAX. ',
-      videoUrl: '../../assets/cursoProgramacion/video1.mp4', 
+      videoUrl: '../../assets/cursoProgramacion/Conexion_CSV.mkv', 
     },
-    { 
-      id: 3,
-      title: 'Fundamentos de DAX',
-      videoUrl: '../../assets/cursoProgramacion/video1.mp4',
-    },
+    // { 
+    //   id: 3,
+    //   title: 'Fundamentos de DAX',
+    //   videoUrl: '../../assets/cursoProgramacion/video1.mp4',
+    // },
     // { 
     //   id: 4,
     //   title: 'Funciones de filtrado y contexto de fila en DAX.',

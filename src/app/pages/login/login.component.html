@@ -1,0 +1,35 @@
+<div class="content-about">
+  
+    <ion-row>
+      <ion-col class="col" size="12">
+        <h2 style="color: #fca311;font-size: 32px;">Iniciar Sesión</h2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="col" size="12">
+        <img src="../../../assets/img/logind.jpg" alt="registro">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="col" size="12">    
+    
+        <form [formGroup]="LoginForm" (ngSubmit)="submitForm()">      
+          
+          <div class="form-group">
+            <label for="nombre">Usuario:</label><br>
+            <input type="text" id="usuario" formControlName="usuario" class="form-control">
+          </div>       
+        
+          <div class="form-group">
+            <label for="password">Crear Contraseña:</label><br>
+            <input type="password" id="password" formControlName="password" class="form-control">
+          </div>
+        
+          
+          <button type="submit" class="btn btn-primary">Ingresar</button>
+        </form>
+      </ion-col>
+    </ion-row>
+  
+    
+  </div>
